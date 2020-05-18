@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    background-color: #EEE9E1;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+header{
+    background-color: #08094B;
+    height: 100px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+header h1{
+    padding: 20px;
+    line-height: 45px;
+}
+h3{
+    color: #08094B;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Style the container */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 15%;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    margin-left: 30%;
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 76%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.link-container {
+    margin-bottom: 20px;
+    width: 300px;
+    float: left;
+    height: 100%;
+    background-color: #08094B;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.link-container h2 {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.link-container ul {
+    font-size: 13px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: #08094B;
+}
+
+.link-container ul li{
+    border-bottom: #777 1px solid;
+    padding-left: 20px;
+    line-height: 100px;
+}
+
+.link-container ul li a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 16px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+a{
+    text-decoration:none;
+    color: darkslateblue;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+th {
+    color: black;
+    font-weight: bold;
+}
+td, th {
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid dimgrey;
+    text-align: center;
+}
+
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+}
+button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    background-color: #08094B;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    margin-top: 20px;
+}
+button a {
+  color: white;
+}
+button hover{
+    color: #eeeeee;
+}
+.content{
+    margin: 100px 50px 50px 50px;
+}
